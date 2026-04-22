@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or discuss this framework repository, please cite it using the metadata below."
+title: "Four-Layer OCED-M Framework"
+type: software
+authors:
+  - family-names: "Chen"
+    given-names: "Haoran"
+    orcid: "https://orcid.org/0000-0002-8698-8712"
+abstract: >-
+  A public-facing framework repository for governable agentic workflow systems,
+  centered on a four-layer structure over law, object, runtime, and audit, plus
+  coordinate-level assurance through obligation, control, evidence, and disposition.
+version: "0.1.0"
+date-released: 2026-04-21
+license: Apache-2.0
+keywords:
+  - workflow governance
+  - agentic systems
+  - four-layer architecture
+  - OCED-M
+  - reconstructability
+  - bounded execution

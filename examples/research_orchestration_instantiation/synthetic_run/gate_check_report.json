@@ -1,0 +1,14 @@
+{
+  "gate_id": "Gate2",
+  "coordinate_id": "r_protocol_lock",
+  "result": "hold_for_approval",
+  "checked_artifacts": [
+    "study_question_spec",
+    "pre_protocol_evidence_packet",
+    "protocol_analysis_plan",
+    "protocol_lock_decision"
+  ],
+  "missing_items": [],
+  "approval_sensitive_issue": "The proposed redesign changes the primary endpoint family.",
+  "recommended_disposition": "request_user_approval"
+}

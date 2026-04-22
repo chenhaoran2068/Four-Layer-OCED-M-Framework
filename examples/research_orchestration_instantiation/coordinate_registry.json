@@ -1,0 +1,17 @@
+{
+  "registry_id": "research_registry_v1",
+  "workflow_family": "ClinicalResearchWorkflow",
+  "coordinate_id": "r_protocol_lock",
+  "coordinate_name": "protocol_lock_transition",
+  "layer": "law",
+  "status": "registered",
+  "description": "Govern the transition from pre-protocol evidence review into a locked protocol so that no project silently advances without an explicit question freeze, analysis boundary, and redesign policy.",
+  "promoted_unit": "Research.protocol_lock_boundary",
+  "source_surface": "research_orchestration_instantiation",
+  "allowed_dispositions": [
+    "advance_to_knowledge_build",
+    "return_to_inventory_review",
+    "request_user_approval",
+    "block_progression"
+  ]
+}

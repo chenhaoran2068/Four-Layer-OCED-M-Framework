@@ -1,0 +1,27 @@
+{
+  "coordinate_id": "r_protocol_lock",
+  "preconditions": [
+    "Study question clarified.",
+    "Pre-protocol evidence packet recorded.",
+    "Primary analysis boundary written down.",
+    "Approval-sensitive redesign triggers listed."
+  ],
+  "fail_closed_checks": [
+    "Missing study question specification.",
+    "Missing evidence packet.",
+    "Missing protocol lock decision.",
+    "Silent primary-method change.",
+    "Unclassified redesign that should have been approval-routed."
+  ],
+  "emitted_records": [
+    "protocol_lock_decision",
+    "decision_log_id",
+    "gate_check_report_id"
+  ],
+  "disposition_map": {
+    "all_checks_pass": "advance_to_knowledge_build",
+    "repairable_gap": "return_to_inventory_review",
+    "approval_sensitive_change": "request_user_approval",
+    "hard_violation": "block_progression"
+  }
+}

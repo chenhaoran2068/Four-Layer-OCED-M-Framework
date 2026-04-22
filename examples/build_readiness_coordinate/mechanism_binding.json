@@ -1,0 +1,27 @@
+{
+  "coordinate_id": "r_build",
+  "preconditions": [
+    "Route lock bound.",
+    "Dependencies resolved.",
+    "Build state current.",
+    "Audit binding present."
+  ],
+  "fail_closed_checks": [
+    "Missing route lock binding.",
+    "Failed build assertion.",
+    "Unresolved dependency issue.",
+    "Unresolved integrity issue.",
+    "Stale build state after invalidation."
+  ],
+  "emitted_records": [
+    "build_package_id",
+    "integrity_status",
+    "audit_trace_id"
+  ],
+  "disposition_map": {
+    "all_checks_pass": "continue_to_execution",
+    "repairable_violation": "return_to_repair",
+    "hard_violation": "block_continuation"
+  }
+}
+

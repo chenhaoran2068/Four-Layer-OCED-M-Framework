@@ -1,0 +1,14 @@
+{
+  "event_id": "protocol_lock_reroute_001",
+  "coordinate_id": "r_protocol_lock",
+  "event_type": "reroute",
+  "outcome": "request_user_approval",
+  "recorded_at": "2026-04-21T01:10:00Z",
+  "actor": "research_manager_agent",
+  "evidence_refs": [
+    "protocol_change:primary_endpoint_family_changed",
+    "decision_request:approval_required",
+    "gate_check_report:gate2_hold"
+  ],
+  "note": "Progression into knowledge build was stopped because a redesign crossed an approval-sensitive boundary and required explicit user review."
+}

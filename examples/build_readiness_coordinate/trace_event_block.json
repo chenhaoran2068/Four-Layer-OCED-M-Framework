@@ -1,0 +1,14 @@
+{
+  "event_id": "build_event_block_001",
+  "coordinate_id": "r_build",
+  "event_type": "block",
+  "outcome": "block_continuation",
+  "recorded_at": "2026-04-21T00:05:00Z",
+  "actor": "workflow_runtime",
+  "evidence_refs": [
+    "integrity_status:failed",
+    "audit_trace_id:trace_build_002"
+  ],
+  "note": "Progression was blocked because the current build state failed integrity checks and could not be treated as lawfully current."
+}
+

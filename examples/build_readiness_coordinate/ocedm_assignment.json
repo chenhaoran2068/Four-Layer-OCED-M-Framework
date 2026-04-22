@@ -1,0 +1,31 @@
+{
+  "coordinate_id": "r_build",
+  "obligation": [
+    "A current locked route exists.",
+    "Downstream data requirements have lawful carry-forward.",
+    "The build package is bound to the current workflow state.",
+    "An active audit binding is available."
+  ],
+  "control": [
+    "Fail closed if the lock binding is missing.",
+    "Fail closed if build assertions fail.",
+    "Fail closed if dependency or integrity checks remain unresolved.",
+    "Fail closed if a later invalidating event makes the build state stale."
+  ],
+  "evidence": [
+    "Build package identifier.",
+    "Integrity judgment surface.",
+    "Audit trace records sufficient to reconstruct why progression was permitted or blocked."
+  ],
+  "disposition": {
+    "allowed_paths": [
+      "continue_to_execution",
+      "return_to_repair",
+      "block_continuation"
+    ],
+    "default_violation_path": "block_continuation",
+    "user_approval_required": false
+  },
+  "mechanism_formation_notes": "Compile the assurance tuple into a local mechanism that checks lock, dependency, integrity, and currentness before allowing downstream continuation."
+}
+

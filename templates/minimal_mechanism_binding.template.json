@@ -1,0 +1,17 @@
+{
+  "coordinate_id": "r_example",
+  "preconditions": [
+    "State the preconditions."
+  ],
+  "fail_closed_checks": [
+    "State the fail-closed checks."
+  ],
+  "emitted_records": [
+    "State the records emitted when this coordinate is evaluated."
+  ],
+  "disposition_map": {
+    "all_checks_pass": "continue",
+    "violating_condition": "block"
+  }
+}
+

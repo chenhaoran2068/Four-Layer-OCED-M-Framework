@@ -1,0 +1,13 @@
+{
+  "project_id": "ResearchExample_001",
+  "current_stage": "protocol_lock",
+  "status": "awaiting_gate_check",
+  "question_family": "association",
+  "primary_endpoint_family": "binary_outcome",
+  "primary_method_family": "adjusted_logistic_regression",
+  "approval_sensitive_boundaries": [
+    "primary_endpoint_family_change",
+    "primary_method_family_change",
+    "target_population_family_change"
+  ]
+}

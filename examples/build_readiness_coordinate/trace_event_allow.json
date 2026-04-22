@@ -1,0 +1,15 @@
+{
+  "event_id": "build_event_allow_001",
+  "coordinate_id": "r_build",
+  "event_type": "allow",
+  "outcome": "continue_to_execution",
+  "recorded_at": "2026-04-21T00:00:00Z",
+  "actor": "workflow_runtime",
+  "evidence_refs": [
+    "build_package_id:build_pkg_001",
+    "integrity_status:passed",
+    "audit_trace_id:trace_build_001"
+  ],
+  "note": "Progression was allowed because the lock, dependencies, currentness, and integrity checks all passed."
+}
+

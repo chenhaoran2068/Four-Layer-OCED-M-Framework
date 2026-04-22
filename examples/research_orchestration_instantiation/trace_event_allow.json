@@ -1,0 +1,15 @@
+{
+  "event_id": "protocol_lock_allow_001",
+  "coordinate_id": "r_protocol_lock",
+  "event_type": "allow",
+  "outcome": "advance_to_knowledge_build",
+  "recorded_at": "2026-04-21T01:00:00Z",
+  "actor": "research_manager_agent",
+  "evidence_refs": [
+    "study_question_spec:accepted",
+    "pre_protocol_evidence_packet:reviewed",
+    "protocol_lock_decision:approved",
+    "gate_check_report:gate2_pass"
+  ],
+  "note": "The protocol boundary was accepted because the question, evidence packet, analysis boundary, and redesign policy were all explicitly recorded."
+}

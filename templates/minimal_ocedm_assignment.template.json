@@ -1,0 +1,23 @@
+{
+  "coordinate_id": "r_example",
+  "obligation": [
+    "List the obligations that must already hold."
+  ],
+  "control": [
+    "List fail-closed checks."
+  ],
+  "evidence": [
+    "List the explicit records emitted or bound at this coordinate."
+  ],
+  "disposition": {
+    "allowed_paths": [
+      "continue",
+      "return_to_repair",
+      "block"
+    ],
+    "default_violation_path": "block",
+    "user_approval_required": false
+  },
+  "mechanism_formation_notes": "Describe how the assurance tuple becomes machine-carried."
+}
+

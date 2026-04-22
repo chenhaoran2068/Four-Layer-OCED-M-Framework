@@ -1,0 +1,17 @@
+{
+  "registry_id": "workflow_registry_v1",
+  "workflow_family": "WorkflowFamilyName",
+  "coordinate_id": "r_example",
+  "coordinate_name": "example_coordinate",
+  "layer": "object",
+  "status": "registered",
+  "description": "Describe the governance surface governed by this coordinate.",
+  "promoted_unit": "WorkflowFamily.example_surface",
+  "source_surface": "authored_registry",
+  "allowed_dispositions": [
+    "continue",
+    "return_to_repair",
+    "block"
+  ]
+}
+

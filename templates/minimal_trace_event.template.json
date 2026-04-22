@@ -1,0 +1,13 @@
+{
+  "event_id": "example_event_001",
+  "coordinate_id": "r_example",
+  "event_type": "allow",
+  "outcome": "continue",
+  "recorded_at": "2026-04-21T00:00:00Z",
+  "actor": "workflow_runtime",
+  "evidence_refs": [
+    "example_record.json"
+  ],
+  "note": "Describe why the coordinate allowed, blocked, or rerouted progression."
+}
+

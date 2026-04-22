@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chenhaoran2068.github.io/Four-Layer-OCED-M-Framework/schemas/coordinate_registry.schema.json",
+  "title": "Coordinate Registry Entry",
+  "type": "object",
+  "required": [
+    "registry_id",
+    "workflow_family",
+    "coordinate_id",
+    "coordinate_name",
+    "layer",
+    "status",
+    "description",
+    "promoted_unit",
+    "source_surface",
+    "allowed_dispositions"
+  ],
+  "properties": {
+    "registry_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workflow_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_id": {
+      "type": "string",
+      "pattern": "^r_[A-Za-z0-9_]+$"
+    },
+    "coordinate_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "layer": {
+      "type": "string",
+      "enum": [
+        "law",
+        "object",
+        "runtime",
+        "audit"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "relevant",
+        "crystallized",
+        "registered",
+        "retired"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "promoted_unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_surface": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_dispositions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

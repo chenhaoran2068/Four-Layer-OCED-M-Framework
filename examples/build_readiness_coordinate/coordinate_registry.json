@@ -1,0 +1,17 @@
+{
+  "registry_id": "research_registry_v1",
+  "workflow_family": "ClinicalResearchWorkflow",
+  "coordinate_id": "r_build",
+  "coordinate_name": "build_readiness",
+  "layer": "object",
+  "status": "registered",
+  "description": "Govern the build-readiness surface where route lock, dependency resolution, build currentness, and downstream execution readiness must remain aligned.",
+  "promoted_unit": "Research.build_readiness_surface",
+  "source_surface": "clinical_research_instantiation",
+  "allowed_dispositions": [
+    "continue_to_execution",
+    "return_to_repair",
+    "block_continuation"
+  ]
+}
+

@@ -1,0 +1,32 @@
+{
+  "coordinate_id": "r_protocol_lock",
+  "obligation": [
+    "A coherent study question exists.",
+    "A pre-protocol evidence packet has been reviewed.",
+    "Primary and exploratory analysis boundaries are recorded.",
+    "Redesign triggers and approval thresholds are explicit."
+  ],
+  "control": [
+    "Fail closed if the study question is still ambiguous.",
+    "Fail closed if the evidence packet is missing.",
+    "Fail closed if the primary analysis boundary is not locked.",
+    "Reroute to approval instead of silently changing the study design."
+  ],
+  "evidence": [
+    "study_question_spec",
+    "pre_protocol_evidence_packet",
+    "protocol_analysis_plan",
+    "protocol_lock_decision"
+  ],
+  "disposition": {
+    "allowed_paths": [
+      "advance_to_knowledge_build",
+      "return_to_inventory_review",
+      "request_user_approval",
+      "block_progression"
+    ],
+    "default_violation_path": "block_progression",
+    "user_approval_required": true
+  },
+  "mechanism_formation_notes": "Compile the protocol-lock boundary into gate-aware checks that require explicit evidence, explicit lock records, and approval-aware rerouting before the project can move forward."
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chenhaoran2068.github.io/Four-Layer-OCED-M-Framework/schemas/ocedm_assignment.schema.json",
+  "title": "OCED-M Assignment",
+  "type": "object",
+  "required": [
+    "coordinate_id",
+    "obligation",
+    "control",
+    "evidence",
+    "disposition",
+    "mechanism_formation_notes"
+  ],
+  "properties": {
+    "coordinate_id": {
+      "type": "string",
+      "pattern": "^r_[A-Za-z0-9_]+$"
+    },
+    "obligation": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "control": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "disposition": {
+      "type": "object",
+      "required": [
+        "allowed_paths",
+        "default_violation_path",
+        "user_approval_required"
+      ],
+      "properties": {
+        "allowed_paths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "default_violation_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "user_approval_required": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "mechanism_formation_notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

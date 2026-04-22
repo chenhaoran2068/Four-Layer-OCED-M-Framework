@@ -1,0 +1,16 @@
+{
+  "handoff_id": "handoff_inventory_to_protocol_001",
+  "from_agent": "inventory_agent",
+  "to_agent": "protocol_agent",
+  "project_id": "ResearchExample_001",
+  "stage": "protocol_lock",
+  "included_artifacts": [
+    "study_question_spec",
+    "source_inventory_summary",
+    "pre_protocol_evidence_packet"
+  ],
+  "risk_flags": [
+    "composite exposure still requires explicit derivation note"
+  ],
+  "decision_request": "Confirm whether any change to the primary endpoint family should require user approval."
+}

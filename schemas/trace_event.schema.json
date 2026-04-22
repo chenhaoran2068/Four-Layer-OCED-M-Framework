@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chenhaoran2068.github.io/Four-Layer-OCED-M-Framework/schemas/trace_event.schema.json",
+  "title": "Trace Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "coordinate_id",
+    "event_type",
+    "outcome",
+    "recorded_at",
+    "actor",
+    "evidence_refs",
+    "note"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_id": {
+      "type": "string",
+      "pattern": "^r_[A-Za-z0-9_]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "allow",
+        "block",
+        "reroute",
+        "invalidate",
+        "repair_return"
+      ]
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

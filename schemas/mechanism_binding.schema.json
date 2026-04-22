@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chenhaoran2068.github.io/Four-Layer-OCED-M-Framework/schemas/mechanism_binding.schema.json",
+  "title": "Mechanism Binding",
+  "type": "object",
+  "required": [
+    "coordinate_id",
+    "preconditions",
+    "fail_closed_checks",
+    "emitted_records",
+    "disposition_map"
+  ],
+  "properties": {
+    "coordinate_id": {
+      "type": "string",
+      "pattern": "^r_[A-Za-z0-9_]+$"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "fail_closed_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "emitted_records": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "disposition_map": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}
