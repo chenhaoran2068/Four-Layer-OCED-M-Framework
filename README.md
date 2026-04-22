@@ -116,7 +116,7 @@ This repository is intentionally narrow.
 It is a public framework repository for Four-Layer OCED-M, not a mirror of a
 larger local workspace.
 
-Before first public upload, review:
+For scope boundaries and release-readiness guidance, review:
 
 - `docs/repository_scope.md`
 - `docs/release_readiness.md`
@@ -126,5 +126,5 @@ Before first public upload, review:
 - license: Apache-2.0
 - citation metadata: `CITATION.cff`
 
-The initial license and citation metadata are prepared for upload review and
-can still be adjusted before the first public push.
+License and citation metadata are included in this repository and can be
+updated in future releases as needed.
