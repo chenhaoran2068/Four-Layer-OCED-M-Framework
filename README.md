@@ -42,7 +42,7 @@ system changes while still appearing to operate normally.
 Many AI workflow systems do not fail by crashing.
 They fail by quietly becoming something else while still appearing successful.
 
-This repository is for teams that need workflow systems to remain:
+Teams using this framework typically need workflow systems to remain:
 
 - governable instead of merely executable
 - attributable instead of only outcome-producing
@@ -96,7 +96,7 @@ In other words:
 
 - `docs/`
   - problem framing, framework summaries, workflow-instantiation guidance,
-    scope, and implementation relationship
+    terminology, scope, and implementation relationship
 - `schemas/`
   - minimal JSON schemas for registry, assurance, mechanism, and trace artifacts
 - `templates/`
@@ -113,10 +113,11 @@ In other words:
 
 1. Read `docs/problem_statement.md`.
 2. Read `docs/four_layer_model.md` and `docs/ocedm_model.md`.
-3. Read `docs/workflow_instantiation_order.md`.
-4. Inspect `examples/build_readiness_coordinate/`.
-5. Inspect `examples/research_orchestration_instantiation/`.
-6. Run:
+3. Read `docs/terminology.md`.
+4. Read `docs/workflow_instantiation_order.md`.
+5. Inspect `examples/build_readiness_coordinate/`.
+6. Inspect `examples/research_orchestration_instantiation/`.
+7. Run:
 
 ```powershell
 python scripts/validate_example_bundle.py examples/build_readiness_coordinate
