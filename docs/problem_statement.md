@@ -34,12 +34,12 @@ The system produces an output, but later cannot strongly reconstruct:
 Execution happened, but governance cannot later inspect it in an attributable
 sense.
 
-## 3. Unbounded Execution
+## 3. Unbounded Movement
 
-The system continues through implicit convenience rather than explicit movement
-constraints.
-It keeps moving, but what counts as lawful movement, current object identity,
-or lawful return is no longer stably represented.
+Unbounded movement is the condition in which progression continues through
+implicit convenience rather than explicit movement constraints.
+The system keeps moving, but what counts as lawful movement, current object
+identity, or lawful return is no longer stably represented.
 
 ## Why The Gap Persists
 
@@ -56,6 +56,11 @@ It answers with:
 
 - a four-layer architecture
 - an authored but admissible registry
-- coordinate-level assurance via OCED
+- coordinate-level assurance via OCED-M
 - machine-carried mechanism formation
+
+Within the framework claim, the target properties are drift externalization,
+reconstructability, and bounded execution.
+The third of these is a target property: it is the answer to unbounded
+movement rather than a second name for the same failure.
  

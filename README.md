@@ -3,11 +3,11 @@
 This repository packages a public-facing framework for governable agentic
 workflow systems.
 
-It focuses on a specific workflow-governance problem:
+It focuses on a specific workflow-governance problem family:
 
-- systems that keep moving while undergoing silent workflow-governance drift
-- systems that produce results but cannot later reconstruct why they were allowed
-- systems that continue through implicit convenience rather than explicit bounds
+- systems that undergo **silent workflow-governance drift**
+- systems that fall into **irreconstructible execution**
+- systems that continue through **unbounded movement**
 
 The framework answers that problem with two named structural commitments:
 
@@ -36,6 +36,11 @@ Hallucination is an output-level failure in which unsupported content is
 produced.
 Silent drift is a workflow-governance failure in which the effective governing
 system changes while still appearing to operate normally.
+
+The other two paper-facing failure names are **irreconstructible execution**
+and **unbounded movement**.
+Their corresponding target properties are **reconstructability** and
+**bounded execution**.
 
 ## What Problem Does This Solve?
 
