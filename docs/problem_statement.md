@@ -6,13 +6,21 @@ But execution capability alone does not guarantee governability.
 
 This framework focuses on three structural failure modes.
 
-## 1. Silent Drift
+## 1. Silent Workflow-Governance Drift
 
-The system changes its goal, identity, evidence basis, or lawful path without
-surfacing that change as a block, reroute, re-authorization, invalidation, or
-auditable transition.
+The primary failure term in this repository is **silent
+workflow-governance drift** (hereafter, **silent drift**).
+It is the condition in which the effective law, object, runtime, or audit
+bindings of a workflow system change without explicit approval, formal change
+registration, or an auditable transition, such that the system continues to
+operate while no longer matching the system that was declared, constrained, and
+reconstructable.
 
 The danger is that the system can still appear successful at the surface level.
+This is not the same as output-level hallucination.
+Hallucination is about unsupported content being produced.
+Silent drift is about the effective governing workflow changing while still
+appearing normal.
 
 ## 2. Irreconstructible Execution
 
@@ -50,4 +58,4 @@ It answers with:
 - an authored but admissible registry
 - coordinate-level assurance via OCED
 - machine-carried mechanism formation
-
+ 

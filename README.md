@@ -5,7 +5,7 @@ workflow systems.
 
 It focuses on a specific workflow-governance problem:
 
-- systems that keep moving while silently drifting
+- systems that keep moving while undergoing silent workflow-governance drift
 - systems that produce results but cannot later reconstruct why they were allowed
 - systems that continue through implicit convenience rather than explicit bounds
 
@@ -23,6 +23,19 @@ These are complementary views, not sequential stages.
 **OCED-M** describes how a real registry coordinate is assured.
 A coordinate typically sits in one dominant structural layer while also
 carrying an OCED-M assignment.
+
+Throughout this repository, the primary failure term is **silent
+workflow-governance drift** (hereafter, **silent drift**): a change in the
+effective law, object, runtime, or audit bindings of a workflow system without
+explicit approval, formal change registration, or an auditable transition, such
+that the system continues to operate while no longer matching the system that
+was declared, constrained, and reconstructable.
+
+This is not the same as hallucination.
+Hallucination is an output-level failure in which unsupported content is
+produced.
+Silent drift is a workflow-governance failure in which the effective governing
+system changes while still appearing to operate normally.
 
 ## What Problem Does This Solve?
 

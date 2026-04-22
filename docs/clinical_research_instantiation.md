@@ -16,7 +16,8 @@ This repository therefore treats clinical research as:
 
 - the first grounding domain
 - the first source of worked examples
-- the first source of realistic silent-drift and reconstructability pressure
+- the first source of realistic silent workflow-governance drift and
+  reconstructability pressure
 
 Current public example surface:
 

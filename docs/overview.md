@@ -36,7 +36,21 @@ carrying an OCED-M assignment.
 In that sense, Four-Layer gives the structural map, while OCED-M gives the
 local assurance grammar used at a real coordinate.
 
+In this repository, the term **silent workflow-governance drift** (hereafter,
+**silent drift**) names a change in the effective law, object, runtime, or
+audit bindings of a workflow system without explicit approval, formal change
+registration, or an auditable transition, such that the system keeps operating
+while no longer matching the system that was declared, constrained, and
+reconstructable.
+
+This is intentionally narrower than generic uses of `drift`.
+It is not the same as classical data or concept drift, and it is not the same
+as output-level hallucination.
+Hallucination concerns unsupported content in an output.
+Silent drift concerns governance-relevant change in the effective operating
+workflow.
+
 The practical aim is not to make every workflow identical.
 The practical aim is to give workflow builders a structure for externalizing
-drift, preserving reconstructability, and keeping execution inside explicit
-movement bounds.
+silent drift, preserving reconstructability, and keeping execution inside
+explicit movement bounds.
