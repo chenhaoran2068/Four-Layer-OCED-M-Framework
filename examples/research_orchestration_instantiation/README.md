@@ -7,6 +7,17 @@ It is intentionally smaller than a live orchestration system root.
 Its purpose is to show how Four-Layer OCED-M can govern a research workflow
 without copying a private local console into the public repository.
 
+For the main workflow-facing public repository, see:
+
+- `https://github.com/chenhaoran2068/Research_Workflow`
+
+Interpretation rule:
+
+- this directory is a distilled framework-repository example
+- `Research_Workflow` is the main public workflow-facing companion repository
+- neither repository should currently be described as a full public runtime
+  mirror
+
 This example includes:
 
 - a minimal coordinate bundle for `r_protocol_lock`

@@ -21,11 +21,17 @@ This repository therefore treats clinical research as:
 
 Current public example surface:
 
+- `https://github.com/chenhaoran2068/Research_Workflow`
+  - the main public workflow-facing companion repository for the current
+    research workflow pack
+  - presents a cleaned public workflow example
+  - remains bounded and is not a full public runtime mirror
 - `examples/research_orchestration_instantiation/`
   - a distilled public-safe profile derived from a governed research
     orchestration workflow
   - intentionally kept smaller than a live local system root
-  - meant to show mapping, not to serve as a full runtime mirror
+  - meant to show mapping inside the framework repository, not to serve as a
+    full runtime mirror
 
 It does not claim that every workflow family must inherit the same audit
 density, evidence burden, or route rigidity.

@@ -23,6 +23,9 @@ These are complementary views, not sequential stages.
 **OCED-M** describes how a real registry coordinate is assured.
 A coordinate typically sits in one dominant structural layer while also
 carrying an OCED-M assignment.
+This does not require one separately deployed executable unit per coordinate.
+Multiple coordinates may be carried through shared compiled mechanisms so long
+as coordinate-level governance and audit boundaries remain explicit.
 
 Throughout this repository, the primary failure term is **silent
 workflow-governance drift** (hereafter, **silent drift**): a change in the
@@ -82,9 +85,13 @@ full public runtime repository already exists.
 
 Current public implementation status:
 
-- no full public workflow-system implementation repository has been released yet
-- this repository therefore uses distilled public examples rather than a full
-  runtime mirror
+- a public workflow-facing companion repository is now available:
+  `https://github.com/chenhaoran2068/Research_Workflow`
+- that companion repository presents a cleaned public workflow example and
+  bounded public validation surface
+- that companion repository is not a full public runtime mirror
+- this framework repository still uses distilled public examples rather than a
+  full runtime mirror
 - the current clinical research example is a public-safe instantiation profile,
   not a raw export of an active local orchestration system
 - the public materials in this repository provide the conceptual and structural
@@ -95,7 +102,10 @@ In other words:
 - this repository explains the framework
 - this repository includes minimal public examples of how the framework can be
   instantiated
-- a later public runtime repository may expose a fuller system implementation
+- `Research_Workflow` is the main public workflow-facing companion repository
+  for the current research workflow pack
+- a later fuller public runtime repository may still expose a broader system
+  implementation
 
 ## Repository Layout
 
@@ -122,7 +132,9 @@ In other words:
 4. Read `docs/workflow_instantiation_order.md`.
 5. Inspect `examples/build_readiness_coordinate/`.
 6. Inspect `examples/research_orchestration_instantiation/`.
-7. Run:
+7. Inspect the workflow-facing companion repository:
+   `https://github.com/chenhaoran2068/Research_Workflow`
+8. Run:
 
 ```powershell
 python scripts/validate_example_bundle.py examples/build_readiness_coordinate

@@ -3,6 +3,12 @@
 This file records the intended pre-upload review points for the first public
 release.
 
+Current note:
+
+- the framework repository has now been published
+- the workflow-facing companion repository is now:
+  `https://github.com/chenhaoran2068/Research_Workflow`
+
 ## Prepared
 
 - repository name and framework-facing title selected
@@ -11,6 +17,7 @@ release.
 - public implementation status written down
 - minimal schemas, templates, and worked example prepared
 - public-safe research workflow instantiation example prepared
+- public workflow-facing companion repository released separately
 - GitHub-safe validation script prepared
 - initial `LICENSE` added
 - initial `CITATION.cff` added
