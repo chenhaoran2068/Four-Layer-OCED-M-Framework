@@ -45,6 +45,21 @@ and **unbounded movement**.
 Their corresponding target properties are **reconstructability** and
 **bounded execution**.
 
+## Current Public Release Split
+
+The current public release is intentionally split across two repositories:
+
+- `Four-Layer-OCED-M-Framework`
+  - the framework/specification repository
+- `Research_Workflow`
+  - the main public workflow-facing companion repository for the current
+    research workflow pack:
+    `https://github.com/chenhaoran2068/Research_Workflow`
+
+Important boundary:
+
+- neither repository is a full public runtime mirror
+
 ## What Problem Does This Solve?
 
 Many AI workflow systems do not fail by crashing.
@@ -151,6 +166,7 @@ For scope boundaries and release-readiness guidance, review:
 
 - `docs/repository_scope.md`
 - `docs/release_readiness.md`
+- `docs/public_release_messaging.md`
 
 ## License And Citation
 

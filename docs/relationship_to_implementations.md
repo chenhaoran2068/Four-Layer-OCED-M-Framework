@@ -59,3 +59,7 @@ A later public workflow-system repository may expose:
 Until that fuller public runtime repository exists, this framework repository
 should remain honest about scope and should not pretend to include a complete
 public runtime implementation.
+
+For exact release wording and repository-description guidance, see:
+
+- `docs/public_release_messaging.md`

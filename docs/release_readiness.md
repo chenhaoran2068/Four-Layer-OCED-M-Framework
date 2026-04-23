@@ -8,6 +8,8 @@ Current note:
 - the framework repository has now been published
 - the workflow-facing companion repository is now:
   `https://github.com/chenhaoran2068/Research_Workflow`
+- the current wording reference is:
+  `docs/public_release_messaging.md`
 
 ## Prepared
 
